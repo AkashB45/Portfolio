@@ -1,0 +1,16 @@
+.floatingDev{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    box-shadow: var(--boxShadow);
+    border-radius: 17px;
+    height: 4rem;
+    padding: 0px 28px 0px 0px;
+}
+.floatingDev>img{
+    transform: scale(0.42);
+}
+.floatingDev>span{
+    font-size: 16px;
+}

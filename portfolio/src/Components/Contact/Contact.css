@@ -1,0 +1,70 @@
+.contact{
+    padding: 0rem 3rem 0rem 3rem;
+    display: flex;
+    height: 80vh;
+    margin-top: 4rem;
+}
+.contact .awesome{
+    flex:1;
+    padding: 0rem 3rem 0rem 3rem;
+}
+.contact .awesome>:nth-child(1){
+    font-size: 3.5rem;
+}
+.contact .awesome>:nth-child(2){
+    font-size: 2.5rem;
+}
+.c-right{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    position: relative;
+}
+.c-right>form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.c-right .user{
+    width: 20rem;
+    height: 2rem;
+    padding: 0.3rem;
+    outline: none;
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    font-size: 16px;
+}
+.c-right textarea
+{
+    height: 4rem!important;
+    width: 20rem!important;
+}
+.c-blur1{
+    top:1rem;
+    left:6rem;
+}
+@media screen and (max-width:480px) {
+  .contact{
+    display: flex;
+    flex-direction: column;
+    padding: 0rem;
+    height: 90vh;
+    gap: 0;
+    
+  }
+  .contact>:nth-child(1){
+    padding: 0;  
+    margin:0;  
+}
+.contact .awesome>:nth-child(1){
+    font-size: 2.5rem;
+}
+.contact .awesome>:nth-child(2){
+    font-size: 1.5rem;
+}
+  .contact>:nth-child(2){
+    transform: scale(0.8); 
+    flex:12
+}
+}
