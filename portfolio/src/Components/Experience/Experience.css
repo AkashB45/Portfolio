@@ -1,0 +1,55 @@
+.experience{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap :6rem;
+    height:25vh;
+    margin-bottom: 8rem;
+}
+.achievement{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    width:4rem;
+    height: 4rem;
+    background: white;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.circle::before{
+    border-radius: 100%;
+    content: '';
+    background-image: linear-gradient(to bottom, #87e6fb 0%, #ffc05c 100%);
+    top: -8px;
+    left: -8px;
+    bottom: -8px;
+    right: -8px;
+    position: absolute;
+    z-index:-1;
+    box-shadow: var(--boxShadow);
+    
+}
+.achievement>:nth-child(3)
+{
+    color: var(--orange);
+}
+@media screen and (max-width:480px) {
+  .experience{
+    height: 20rem;
+    gap: 0rem;
+    margin-bottom: -8rem;
+    margin-top: -10rem;
+  }
+  .achievement{
+    transform: scale(0.7);
+  }
+}
